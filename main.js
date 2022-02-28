@@ -1,4 +1,10 @@
 
+
+document.ready(function() {
+  // ここにコード
+});
+
+
 $(function(){
   $('.slider').slick({
    

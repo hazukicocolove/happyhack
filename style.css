@@ -170,10 +170,20 @@ img{
     text-align: center;
 }
 
+footer{
+    margin: 60px;
+    text-align: center;
+}
 
-/*@media all and (max-width:480px){
+
+@media all and (max-width:480px){
 .main-Visual,
 .concept-photo,
-.cafe-photo
+.cafe-photo{
+background-attachment: scroll;
+}
 
+.main-Visual h1{
+    text-align: left;
+}
 }
