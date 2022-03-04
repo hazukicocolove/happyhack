@@ -6,8 +6,7 @@
     text-decoration: none;
     color: black;
     list-style: none;
-    background-color: #fff;
-    
+   
     }
 
     a{
@@ -185,5 +184,19 @@ background-attachment: scroll;
 
 .main-Visual h1{
     text-align: left;
+    font-size:6rem;
+
+}
+
+.main-Visual span{
+    font-size: 1.5rem;
+}
+.section-title{
+    width: 80%;
+}
+
+#concept p,
+#menu p{
+    width: 70%;
 }
 }
