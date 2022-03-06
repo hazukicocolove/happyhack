@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     box-sizing: border-box;
     margin: 0px;
@@ -6,112 +6,139 @@
     text-decoration: none;
     color: black;
     list-style: none;
-   
-    }
+}
 
-    a{
-        border-radius: 8px;
-    }
+a {
+    border-radius: 8px;
+}
 
-    nav li{
-       
-        display: inline-block;
-        justify-content: space-between;
-        padding: 24px 20px;
-       
-    }
 
-    ul{
-        text-align: right;
-        margin-right: 32px;
-    }
+header {
+    line-height: 0px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
 
-    nav a{
-        font-family:'Futura';
-        font-size: 24px;
-        color: #fff;
-        transition: 0.5s;
-    }
-    nav a:hover{
-        color:#3F5DDA;
-    }
-
-  .title{
-    text-align: center;
-   }
-
-   .title img{
-       padding-top: 80px;
-       width: 900px;
-       height: auto;
-   }
-    
-   .bg_slide {
+.bg_slide {
     width: 100%;
     height: 100vh;
-    background-position:center center;
+    background-position: center center;
     background-size: cover;
-    display: flex;
     align-items: center;
     justify-content: center;
-    }
-    .bg{
-    color: white;
-    font-size: 100px;
-    font-weight: bold;
-    text-align:center;
-    }
+    margin-top: 0px;
+}
 
-.title p{
-    font-family:'Futura';
+nav {
+    width: 100%;
+}
+
+nav li {
+    padding: 24px 20px;
+    clear: both;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 32px;
+}
+
+nav a {
+    font-family: 'Futura';
+    font-size: 26px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #3F5DDA;
+}
+
+.header .title {
+    align-items: center;
+    text-align: center;
+
+}
+
+.header .title img {
+
+    width: 900px;
+    height: auto;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.header .title p {
+    font-style: italic;
+}
+
+.title p {
+    font-family: 'Futura';
     font-size: 48px;
     margin-top: 32px;
+    color: #fff;
 }
 
-    h2{
-        font-family:'Futura';
-        font-size: 60px;
-        color: #3F5DDA;
-        text-align: center;
-        margin-top: 80px 0px;
-    }
-
-
-    .text{
-        text-align: center;
-        padding-left: 60px;
-        margin-top: 40px;
-
-    }
-
-    .text a{
-        padding: 20px 40px;
-        background-color: #3F5DDA;
-        color: #fff;
-        margin-top: 40px;
-    }
-
-    .text p{
-        margin: 40px;  
-    }
-
-
-.introimg1{
-    float: left;
+h2 {
+    font-family: 'Futura';
+    font-size: 52px;
+    color: #3F5DDA;
+    text-align: center;
+    padding: 50px;
 }
 
-.introimg2{
-    float: right;
+.text {
+    padding: 0 50px;
+    line-height: 2em;
 }
 
-.sec1{
-    clear: both;
-    margin: 40px;
-   
+.text a {
+    padding: 5px 20px;
+    background-color: #3F5DDA;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
 }
-.sec2{
-    clear: both;
-    margin: 40px;
+
+.text a:hover {
+    box-shadow: 0 0 10px #999;
+}
+
+.text p {
+    margin-bottom: 40px;
+}
+
+
+.introimg1 {
+    width: 500px;
+    height: 333px;
+}
+
+.introimg2 {
+    width: 500px;
+    height: 333px;
+}
+
+.sec1 {
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.sec2 {
+    display: flex;
+}
+
+.sec1 text {
+    padding: 40px;
+}
+
+.sec2 a {
+    background-color: #FFC002;
 }
 
 
@@ -120,85 +147,221 @@
     margin: 20px 200px 100px 200px;
 }
 
-.Courses{
+
+
+.Courses {
     background-color: #D6E5F9;
 }
-    .course{
-        display: block;
-        background-color: #fff;
-        margin: 20px;
-        text-align: center;
-        overflow: hidden;
-    }
 
-    .course img{
-        height: 100px;
-        width: auto;
-    }
+.course {
 
-    .course a{
-        background-color: #3F5DDA;
-        color: #fff;
-        margin: 2px;
-        padding: 5px;
-    }
-    .course a:hover{
-        box-shadow: 2px;
-    }
+    display: block;
+    background-color: #fff;
+    margin: 15px;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(201, 201, 201);
+    font-weight: bold;
 
-img{
+}
+
+.course img {
+    height: 132px;
+    width: auto;
+    padding-bottom: 48px;
+}
+
+.course p {
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+.course a {
+    background-color: #3F5DDA;
+    color: #fff;
+    margin: 2px;
+    padding: 16px 24px;
+    font-size: 12px;
+}
+
+#html a {
+    background-color: #F16629;
+}
+
+#css a {
+    background-color: #28A9DF;
+}
+
+#unity a {
+    background-color: #333333;
+}
+
+#ruby a {
+    background-color: #FF5252;
+}
+
+#java a {
+    background-color: #FFD700;
+}
+
+#swift a {
+    background-color: #FE7535;
+}
+
+#go a {
+    background-color: #72CFDD;
+}
+
+.course a:hover {
+    box-shadow: 2px;
+}
+
+img {
     width: 400px;
 }
 
-.ue{
+.ue {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.shita{
+.shita {
     display: flex;
     justify-content: center;
 }
 
 
 #js-particles {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: absolute;
+
+
 }
 
-.map{
+.slider {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.slider img {
+    height: auto;
+    width: 100%;
+}
+
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+
+.map {
     text-align: center;
+
 }
 
-footer{
+footer {
     margin: 60px;
     text-align: center;
 }
 
+/* PC用のCSSはメディアクエリの外に記述する */
 
-@media all and (max-width:480px){
-.main-Visual,
-.concept-photo,
-.cafe-photo{
-background-attachment: scroll;
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
 }
 
-.main-Visual h1{
-    text-align: left;
-    font-size:6rem;
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
 
-}
+    .header ul {
+        visibility: hidden;
+    }
 
-.main-Visual span{
-    font-size: 1.5rem;
-}
-.section-title{
-    width: 80%;
-}
+    .header .title img {
+        width: 250px;
 
-#concept p,
-#menu p{
-    width: 70%;
-}
+    }
+
+    .header .title p {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 36px;
+        padding: 40px;
+    }
+
+  
+
+    .introimg1 {
+        width: 90vw;
+    }
+
+    .introimg2 {
+        width: 90vw;
+    }
+
+    .text {
+        width: 80vw;
+        margin: 30px auto 0;
+        padding: 0;
+        line-height: 2em;
+
+    }
+
+    .text p {
+        text-align: left;
+        font-size: 13px;
+        width: 80vw;
+    }
+
+    .text a {
+        font-size: 14px;
+    }
+
+    .text p{
+        display: block;
+        text-align: center;
+    }
+
+    .introimg1{
+        margin: 0 auto;
+        display: inline;
+    }
+
+    .text p {
+        display: block;
+        text-align: center;
+    }
+
+    .introimg2{
+        margin: 0 auto;
+        display: inline;
+    }
+
+
+    .course {
+        height: 200px;
+        width: 140px;
+    }
+
+    #particles-js {
+        height: 1150px;
+    }
+
+  
+    iframe {
+        width: 80vw;
+        height: 60vw;
+    }
 }

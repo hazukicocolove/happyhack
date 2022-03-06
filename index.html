@@ -31,11 +31,10 @@
       </ul>
     </nav>
     <div class="title">
-      <img src="images/logo.png" alt="">
+      <img src="images/logo.png" alt=""　class="titleimg">
       <p>We are Web Designers.</p>
     </div>
   </div>
-
   </section>
 
   <section class="Introduction fuwa" id="Introduction">
@@ -46,23 +45,24 @@
         <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
           特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
           誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
+         <a href="">会員登録</a>
         </p>
-        <a href="">会員登録</a>
       </div>
     </div>
     <div class="sec2">
-      <img src="images/introduction_002.jpg" alt="" class="introimg2">
       <div class="text">
         <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
           WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
           自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+         <a href="">会員登録</a>
         </p>
-        <a href="">会員登録</a>
       </div>
+      <img src="images/introduction_002.jpg" alt="" class="introimg2">
     </div>
   </section>
 
   <section class="Courses fuwa" id="Courses">
+    <div id="js-particles"></div>
     <h2>Courses</h2>
 
     <div class="ue">
@@ -103,17 +103,16 @@
         <p>Swiftコース</p>
         <a href="">このコースを受ける</a>
       </div>
-
       <div class="course" id="go">
         <img src="images/go.png" alt="">
         <p>Goコース</p>
         <a href="">このコースを受ける</a>
       </div>
     </div>
-    <div id="js-particles"></div>
+  
   </section>
 
-  <section class="Images" id="Images">
+  <section class="Images fuwa" id="Images">
     <h2>Images</h2>
     <ul class="slider">
       <li><img alt="画像1" src="images/background1.jpg" /></li>
@@ -124,12 +123,12 @@
     </ul>
   </section>
 
-  <section class="Access" id="Access">
+  <section class="Access fuwa" id="Access">
     <h2>Access</h2>
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477545!2d135.49025991499715!3d34.697285690909176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645925014517!5m2!1sja!2sjp"
-        width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
 
@@ -140,7 +139,14 @@
   <script type="text/javascript">
     $(function () {
       $('.slider').slick({
-
+        dots:true,
+        slidesToShow:4,
+        responsive: [{
+		breakpoint: 480,
+		settings: {
+			slidesToShow: 1, // 表示スライド数 2つ
+		}
+	}]
       });
     });
   </script>
@@ -165,7 +171,7 @@
 ScrollReveal().reveal('.fuwa', { 
 duration: 800, // アニメーションの完了にかかる時間
   viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
-  reset: true   // 何回もアニメーション表示するか
+  reset: false   // 何回もアニメーション表示するか
 });
 </script>
 
