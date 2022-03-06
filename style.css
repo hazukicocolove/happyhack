@@ -10,6 +10,8 @@
 
 a {
     border-radius: 8px;
+    width:170px
+    
 }
 
 
@@ -93,16 +95,19 @@ h2 {
 .text {
     padding: 0 50px;
     line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .text a {
     padding: 5px 20px;
     background-color: #3F5DDA;
     color: #fff;
-    margin-top: 40px;
     text-align: center;
     font-weight: bold;
-    display: block;
+   
 }
 
 .text a:hover {
@@ -116,21 +121,23 @@ h2 {
 
 .introimg1 {
     width: 500px;
-    height: 333px;
+    
 }
 
 .introimg2 {
     width: 500px;
-    height: 333px;
+    
 }
 
 .sec1 {
     margin-bottom: 80px;
     display: flex;
+  justify-content: center;
 }
 
 .sec2 {
     display: flex;
+  justify-content: center;
 }
 
 .sec1 text {
@@ -145,6 +152,7 @@ h2 {
 
 #Introduction {
     margin: 20px 200px 100px 200px;
+    
 }
 
 
@@ -153,9 +161,12 @@ h2 {
     background-color: #D6E5F9;
 }
 
-.course {
+.Courses h2{
+    z-index: 10;
+}
 
-    display: block;
+.course {
+    z-index: 10;
     background-color: #fff;
     margin: 15px;
     padding: 60px 40px;
@@ -164,7 +175,10 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 0 2px rgb(201, 201, 201);
     font-weight: bold;
+}
 
+.js-particles{
+z-index: 5;
 }
 
 .course img {
@@ -184,6 +198,7 @@ h2 {
     margin: 2px;
     padding: 16px 24px;
     font-size: 12px;
+   
 }
 
 #html a {
@@ -226,11 +241,13 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .shita {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -323,7 +340,7 @@ footer {
         text-align: left;
         font-size: 13px;
         width: 80vw;
-    }
+    }di
 
     .text a {
         font-size: 14px;
@@ -332,6 +349,12 @@ footer {
     .text p{
         display: block;
         text-align: center;
+    }
+
+    .Introduction{
+        display: flex;
+        flex-direction: column;
+         align-items: center;
     }
 
     .introimg1{
@@ -349,15 +372,58 @@ footer {
         display: inline;
     }
 
+    .ue{
+        float: clear;
+    }
+
+    .shita{
+        float: clear;
+    }
 
     .course {
         height: 200px;
         width: 140px;
     }
 
+    .course img{
+        padding-top: 4px;
+    }
+
+    .course p{
+        font-size: 14px;
+    }
+
+    .course a{
+        font-size: 12px;
+    }
+
     #particles-js {
         height: 1150px;
     }
+
+    .language {
+        height: 220px;
+        width: 160px;
+        margin-bottom: 30px;
+    }
+
+    .course-img {
+        margin: 15px auto 0;
+        width: 80px;
+        height: 90px;
+    }
+
+    .courses h3 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .courses a {
+        width: 140px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
 
   
     iframe {
